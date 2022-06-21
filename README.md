@@ -10,9 +10,11 @@
 
 
 How to Use:
-Type the city you would like to view
-Click search
-You may chose multiple cities
+-Type the city you would like to view
+
+-Click search
+
+-You may chose multiple cities
 
 
 Deployed URL: 
