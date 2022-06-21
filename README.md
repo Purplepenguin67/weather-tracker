@@ -9,6 +9,7 @@
 -I learned how to create websites using API's.
 
 
+
 How to Use:
 -Type the city you would like to view
 
