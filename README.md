@@ -19,6 +19,8 @@ How to Use:
 
 Deployed URL: 
 
+Photo of main page:
+
 
 
 
