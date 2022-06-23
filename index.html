@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="jumbotron container-fluid mt-2 text-center p-2" style="background-color: purple ; color: white;">
-    
-    </div>"
-    
+        <h1> <strong>Weather Dashboard</strong></h1>
+    </div>
+    <!--search bar-->
+    <div class="container" <div class="row">
+        <div class="col-sm-4 bg-light">
+            <h3 class="pt-1"><strong> Search for a City</strong></h3>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="search-city" aria-label="search-city"
+                    aria-describedby="search-button">
+                <div class="input-group-append">
+                    <button class="btn bg-primary text-light" id="search-button"><i class="fa fa-search"></i></button>
+
+                </div>
+
+
+            </div>
 
 
 
@@ -24,6 +40,8 @@
 
 
 
-    <script src="script.js"></script>
+
+            <script src="script.js"></script>
 </body>
+
 </html>
