@@ -40,10 +40,25 @@ function currentcityWeather(city){
         uvindex(response.coord.lon,response.coord.lat);
         forcast(response.id);
         if(response.cod==200){
+            scity = json.parse(localstorage.getitem("city"));
+            console.log(scity);
+            if (scity==null){
+                scity=[];
+                scity.push(city.touppercase()
+                );
+                localStorage.setitem("city",json.stringify(scity));
+                addtolist(city;)
 
 
-            
+            }
+
+
         }
+
+    }
+
+});
+}
 
 
 
