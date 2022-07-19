@@ -63,13 +63,26 @@ function currentcityWeather(city){
 
         }
 
+        function find(c){
+            for (var i=0; i<sCity.length; i++){
+                if(c.toUpperCase()===sCity[i]){
+                    return -1;
+                }
+            }
+            return 1;
+        }
+
+
+$("#search-button").on("click",displayWeather);
+$(document).on("click",invokePastSearch);
+$(window).on("load",loadlastCity);
+$("#clear-history").on("click",clearHistory);
 
 
 
 
 
 
-        
 //Clear search history
 function clearHistory(event){
     event.preventDefault();
