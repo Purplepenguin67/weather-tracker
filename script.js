@@ -59,6 +59,4 @@ function clearHistory(event){
     sCity=[];
     localStorage.removeItem("city");
     document.location.reload();
-}
-        }
-    }
+}}
