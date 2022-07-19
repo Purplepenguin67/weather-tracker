@@ -53,14 +53,12 @@ function currentcityWeather(city){
             }
 
 
-        }
-
-    }
-
-});
+//Clear search history
+function clearHistory(event){
+    event.preventDefault();
+    sCity=[];
+    localStorage.removeItem("city");
+    document.location.reload();
 }
-
-
-
-
-    
+        }
+    }
