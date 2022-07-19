@@ -27,9 +27,6 @@ function currentcityWeather(city){
         
         $(currentCity).html(response.name +"("+date+")" + "<img src="+iconurl+">");
 
-        var date=new Date(response.dt*1000).toLocaleDateString();
-        
-        $(currentCity).html(response.name +"("+date+")" + "<img src="+iconurl+">
 
         var fahrenheit = (response.main.temp- 273.15) * 1.80 + 32;
         $(temp).html((fahrenheit).toFixed(2)+"&#8457");
@@ -37,26 +34,46 @@ function currentcityWeather(city){
         var ws=response.wind.speed;
         var windsmph=(ws*2.237).toFixed(1);
         $(speed).html(windsmph+"MPH");
+        //UV Inquiry
         uvindex(response.coord.lon,response.coord.lat);
         forcast(response.id);
         if(response.cod==200){
-            scity = json.parse(localstorage.getitem("city"));
-            console.log(scity);
-            if (scity==null){
-                scity=[];
-                scity.push(city.touppercase()
+            sCity = json.parse(localstorage.getItem("city"));
+            console.log(sCity);
+            if (sCity==null){
+                sCity=[];
+                sCity.push(city.touppercase()
                 );
-                localStorage.setitem("city",json.stringify(scity));
-                addtolist(city;)
+                localStorage.setItem("city",json.stringify(scity));
+                addToList(city);
+                   }
+                   else { 
+                       if(find(city)>0){
+                           scity.push(city.touppercase());
+                           localStorage.setItem("cityname",JSON.stringify(sCity));
+                           addToList(city);
+                       }
 
 
-            }
+
+                       }
+                
+                }
+            });
+
+        }
 
 
+
+
+
+
+
+        
 //Clear search history
 function clearHistory(event){
     event.preventDefault();
     sCity=[];
     localStorage.removeItem("city");
     document.location.reload();
-}}
+}
