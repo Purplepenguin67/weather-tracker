@@ -62,6 +62,18 @@ function currentcityWeather(city){
             });
 
         }
+        function loadlastCity(){
+            $("ul").empty();
+            var sCity = JSON.parse(localStorage.getItem("cityname"));
+            if(sCity!==null){
+                sCity=JSON.parse(localStorage.getItem("cityname"));
+                for(i=0; i<sCity.length;i++){
+                    addToList(sCity[i]);
+                }
+                city=sCity[i-1];
+                currentWeather(city);
+            }
+
 
         function find(c){
             for (var i=0; i<sCity.length; i++){
@@ -89,4 +101,4 @@ function clearHistory(event){
     sCity=[];
     localStorage.removeItem("city");
     document.location.reload();
-}
+}}
