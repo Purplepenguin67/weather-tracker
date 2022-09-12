@@ -1,6 +1,20 @@
-# Weather-tracker
+
+# Weather Tracker
+
+This hellps the user understand what type of weather conditions to expect in multiple cities. 
+
+## User Story
+
+AS A traveler
+
+I WANT to see the weather outlook for multiple cities
+
+SO THAT I can plan a trip accordingly
+
+## Acceptance Criteria
 
 GIVEN a weather dashboard with form inputs
+
 WHEN I search for a city
 
 THEN I am presented with current and future conditions for that city and that city is added to the search history
@@ -21,36 +35,25 @@ WHEN I click on a city in the search history
 
 THEN I am again presented with current and future conditions for that city
 
-How to Use:
-
--Type the city you would like to view
-
--Click search
-
--You may chose multiple cities
 
 
-Deployed URL: 
-
-Photo of main page:
-
-Weather Dashboard
-Purpose
-A web-based dashboard built to show the current weather in a city of choice. 
-
-Enter in your city of choice and select search to view the current weather, temperature, humidity, wind speed, and UV Index.
-
-UV Index will use a color indicating the severity of the index. Favorable is shown in green, moderate is shown in yellow, and severe is shown in red.
-
-Previous searches are saved in localStorage.
-
-Built With
-HTML
-CSS
-Javascript
-Moment.js API
-Website
+## Screenshots
 
 
 
+
+## Author
+
+- [@Douglas Snodgrass](https://www.github.com/purplepenguin67)
+
+
+## Deployment
+
+
+Github: 
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
 
