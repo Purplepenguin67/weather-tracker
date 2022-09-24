@@ -39,6 +39,7 @@ THEN I am again presented with current and future conditions for that city
 
 ## Screenshots
 
+![weatherdash](https://user-images.githubusercontent.com/103548864/192077959-384205dd-2fd9-4341-9b3a-0c556bc4e582.png)
 
 
 
