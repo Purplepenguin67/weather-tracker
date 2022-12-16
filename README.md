@@ -51,8 +51,9 @@ THEN I am again presented with current and future conditions for that city
 ## Deployment
 
 
-Github: https://purplepenguin67.github.io/weather-tracker/
+Github: https://github.com/Purplepenguin67/weather-tracker
 
+Deployment: https://purplepenguin67.github.io/weather-tracker/
 
 
 ## License
